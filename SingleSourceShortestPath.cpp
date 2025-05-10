@@ -39,7 +39,7 @@ int main() {
         cin >> u >> v >> w;
         u--; v--; // Convert to 0-based indexing
         graph[u][v] = w;
-        graph[v][u] = w; // Undirected graph
+        graph[v][u] = w; // Undirected graph 
     }
 
     int start;

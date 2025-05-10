@@ -22,14 +22,16 @@ def solve_coloring_problem(graph, m):
     if graph_coloring(graph, m, colors, 0, n):
         print("Solution exists: ", colors)
     else:
-        print("No solution exists.")
+        print("No solution exists.")    
 
 # Example graph: 4 vertices in a square (cycle)
 graph = [
-    [0, 1, 0, 1],  # Vertex 0 is connected to 1 and 3
-    [1, 0, 1, 0],  # Vertex 1 is connected to 0 and 2
-    [0, 1, 0, 1],  # Vertex 2 is connected to 1 and 3
-    [1, 0, 1, 0]   # Vertex 3 is connected to 0 and 2
+    [0,1,1,0,0,0],  
+    [1,0,1,0,1,0],  
+    [1,1,0,1,0,0],
+    [0,0,1,0,1,1],  
+    [0,1,0,1,0,1], 
+    [0,0,0,1,1,0]  
 ]
 
 # Number of colors
